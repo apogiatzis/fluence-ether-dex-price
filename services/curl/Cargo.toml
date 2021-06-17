@@ -1,0 +1,9 @@
+[package]
+name = "curl"
+version = "0.1.0"
+authors = ["Fluence Labs"]
+edition = "2018"
+
+
+[dependencies]
+fluence = { version = "=0.6.9" }

@@ -1,0 +1,20 @@
+{
+    "services": {
+        "curl": {
+            "dependencies": ["curl"],
+            "node": "12D3KooWHLxVhUQyAuZe6AHMB29P7wkvTNMn7eDMcsqimJYLKREf"
+        }
+    },
+    "modules": {
+        "curl": {
+            "file": "artifacts/curl.wasm",
+            "config": {
+                "mounted_binaries": {
+                    "curl": "/usr/bin/curl"
+                }
+            }
+        }
+    },
+    "scripts": {},
+    "script_storage": {}
+}

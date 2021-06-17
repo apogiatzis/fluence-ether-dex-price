@@ -1,0 +1,18 @@
+{
+  "name": "eth-dex-price-aggregator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fluence-build": "rm -rf artifacts && for D in services/*; do if [ -d \"${D}\" ]; then (echo \"[+] Compiling ${D}\" && cd \"${D}\" && marine build --release && mkdir -p ../../artifacts/ && cp target/wasm32-wasi/release/*.wasm ../../artifacts/); fi; done",
+    "fluence-deploy": "fldist deploy_app --env ${FLUENCE_ENV} -i app-${FLUENCE_ENV}.config.json -o ng-app/src/fluence/deployment.${FLUENCE_ENV}.json",
+    "fluence-node": "docker run --rm --name fluence_node -e RUST_LOG=\"info\" -p 1210:1210 -p 4310:4310 -d fluencelabs/fluence:latest -t 1210 -w 4310 -k gKdiCSUr1TFGFEgu2t8Ch1XEUsrN5A2UfBLjSZvfci9SPR3NvZpACfcpPGC3eY4zma1pk7UvYv5zb1VjvPHwCjj --local",
+    "fluence-node-peerid": "docker logs fluence_node 2>&1 | grep \"server peer id\" | rev | cut -d' ' -f1 | rev"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@fluencelabs/fldist": "^0.3.37"
+  }
+}

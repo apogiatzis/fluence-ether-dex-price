@@ -1,0 +1,28 @@
+{
+    "services": {
+        "curl": {
+            "dependencies": [
+                "curl"
+            ],
+            "node": "12D3KooWHLxVhUQyAuZe6AHMB29P7wkvTNMn7eDMcsqimJYLKREf",
+            "hashDependencies": [
+                "hash:4799cfc15429a54094e8ef8eea9af7a6bee8b36897040fc51a88182e964d25b9"
+            ],
+            "blueprint_id": "73feb7f4fec8990f712d03f3da106f77ee5eeaceee667e6d427dfb1862cfd970",
+            "id": "6dca3c9c-f7e7-422c-92f5-f150d2bd79f0"
+        }
+    },
+    "modules": {
+        "curl": {
+            "file": "artifacts/curl.wasm",
+            "config": {
+                "mounted_binaries": {
+                    "curl": "/usr/bin/curl"
+                }
+            },
+            "hash": "4799cfc15429a54094e8ef8eea9af7a6bee8b36897040fc51a88182e964d25b9"
+        }
+    },
+    "scripts": {},
+    "script_storage": {}
+}

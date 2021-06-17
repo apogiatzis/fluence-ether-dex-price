@@ -1,0 +1,7 @@
+{
+  "name": "curl",
+  "mountedBinaries":
+    {
+      "curl": "/usr/bin/curl"
+    }
+}
