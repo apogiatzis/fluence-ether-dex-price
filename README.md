@@ -3,7 +3,7 @@
 An open source Fluence powrered service that searches Ethereum decentralized exchanges to find the best Ethereum pair prices. 
 The frontend makes use of a `curl` [Fluence service](services/curl) written in Rust to fetch ether prices from an [Airswap microservice](https://ethereum-dex-prices-service.production.airswap.io/).
 
-![preview](_images/screenshot.png)
+![preview](./_images/screenshot.png)
 
 ## Get Started
 
@@ -12,6 +12,8 @@ Follow the steps below to get started with using this project. In order for the 
 1. [Docker](https://docs.docker.com/get-docker/)
 2. mrepl (`cargo install mrepl`)
 2. marine (`cargo install marine`)
+
+## Fluence
 
 ### Build
 
@@ -78,3 +80,19 @@ To get the peerID of your local node you can also run:
 ```
 npm run fluence-node-peerid
 ```
+
+## Angular Client
+
+To launch the angular app navigate to `ng-app/` folder and run:
+
+**Install dependencies** (Only need to run once)
+```
+npm install
+```
+
+**Launch**
+```
+npm start -- --configuration=testnet
+```
+
+If you use `local` configuration make sure you have a fluence nore running and you have already followed the steps above for deploying the Fluence service locally.
