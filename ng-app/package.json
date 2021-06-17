@@ -23,6 +23,7 @@
     "@fluencelabs/fluence-network-environment": "^1.0.9",
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/typography": "^0.4.1",
+    "angular2-uuid": "^1.1.1",
     "buffer": "^6.0.3",
     "ngx-build-plus": "^11.0.0",
     "rxjs": "^6.6.7",
