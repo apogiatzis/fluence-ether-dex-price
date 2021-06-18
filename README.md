@@ -3,7 +3,10 @@
 An open source Fluence powrered service that searches Ethereum decentralized exchanges to find the best Ethereum pair prices. 
 The frontend makes use of a `curl` [Fluence service](services/curl) written in Rust to fetch ether prices from an [Airswap microservice](https://ethereum-dex-prices-service.production.airswap.io/).
 
+A live version of this website using testnet is deployed at: https://amazing-heyrovsky-476eda.netlify.app/
+
 ![preview](./_images/screenshot.png)
+
 
 ## Get Started
 
