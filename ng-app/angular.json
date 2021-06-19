@@ -37,37 +37,6 @@
             "scripts": []
           },
           "configurations": {
-            "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                },
-                {
-                  "replace": "src/fluence/deployment.json",
-                  "with": "src/fluence/deployment.mainnet.json"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "10mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
-                }
-              ]
-            },
             "testnet": {
               "fileReplacements": [
                 {
@@ -116,9 +85,6 @@
             "extraWebpackConfig": "webpack.config.js"
           },
           "configurations": {
-            "production": {
-              "browserTarget": "ng-eth-dex-price:build:production"
-            },
             "testnet": {
               "browserTarget": "ng-eth-dex-price:build:testnet"
             },
@@ -170,9 +136,6 @@
             "devServerTarget": "ng-eth-dex-price:serve"
           },
           "configurations": {
-            "production": {
-              "devServerTarget": "ng-eth-dex-price:serve:production"
-            },
             "testnet": {
               "devServerTarget": "ng-eth-dex-price:build:testnet"
             },
