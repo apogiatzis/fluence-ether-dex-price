@@ -1,0 +1,9 @@
+modules_dir = "artifacts/"
+
+[[module]]
+    name = "curl"
+    logger_enabled = true
+
+    [module.mounted_binaries]
+    curl = "/usr/bin/curl"
+
