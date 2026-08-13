@@ -1,3 +1,5 @@
+
+
 # Fluence Powered Ether Price Descovery
 
 An open source Fluence powrered service that searches Ethereum decentralized exchanges to find the best Ethereum pair prices. 
@@ -14,7 +16,7 @@ Follow the steps below to get started with using this project. In order for the 
 
 1. [Docker](https://docs.docker.com/get-docker/)
 2. mrepl (`cargo install mrepl`)
-2. marine (`cargo install marine`)
+3. marine (`cargo install marine`)
 
 ## Fluence
 
